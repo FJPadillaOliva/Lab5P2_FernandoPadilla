@@ -69,12 +69,48 @@ public class Main extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jList2 = new javax.swing.JList<>();
         Eliminar = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jList3 = new javax.swing.JList<>();
+        jb_eliminar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPanel12 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jb_agregarV = new javax.swing.JButton();
+        tf_agilidadMV = new javax.swing.JTextField();
+        tf_fuerzaV = new javax.swing.JTextField();
+        tf_poderV = new javax.swing.JTextField();
+        tf_agilidadFV = new javax.swing.JTextField();
+        tf_debilidadV = new javax.swing.JTextField();
+        tf_nombreV = new javax.swing.JTextField();
         jPanel13 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jList4 = new javax.swing.JList<>();
         jPanel14 = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jList5 = new javax.swing.JList<>();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        tf_nombreV1 = new javax.swing.JTextField();
+        tf_agilidadFV1 = new javax.swing.JTextField();
+        tf_fuerzaV1 = new javax.swing.JTextField();
+        jb_agregarV1 = new javax.swing.JButton();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        tf_debilidadV1 = new javax.swing.JTextField();
+        tf_poderV1 = new javax.swing.JTextField();
+        tf_agilidadMV1 = new javax.swing.JTextField();
         jPanel15 = new javax.swing.JPanel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jList6 = new javax.swing.JList<>();
+        jb_eliminar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -342,15 +378,36 @@ public class Main extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Modificar", Modificar);
 
+        jList3.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = {  };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane3.setViewportView(jList3);
+
+        jb_eliminar.setText("Eliminar");
+
         javax.swing.GroupLayout EliminarLayout = new javax.swing.GroupLayout(Eliminar);
         Eliminar.setLayout(EliminarLayout);
         EliminarLayout.setHorizontalGroup(
             EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3)
+                .addContainerGap())
+            .addGroup(EliminarLayout.createSequentialGroup()
+                .addGap(198, 198, 198)
+                .addComponent(jb_eliminar)
+                .addContainerGap(198, Short.MAX_VALUE))
         );
         EliminarLayout.setVerticalGroup(
             EliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jb_eliminar)
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Eliminar", Eliminar);
@@ -371,54 +428,227 @@ public class Main extends javax.swing.JFrame {
         jTabbedPane4.setBackground(new java.awt.Color(102, 102, 102));
         jTabbedPane4.setForeground(new java.awt.Color(204, 204, 204));
 
+        jLabel13.setText("Nombre del Villano");
+
+        jLabel14.setText("Debilidad");
+
+        jLabel15.setText("Agilidad Fisica");
+
+        jLabel16.setText("Poder");
+
+        jLabel17.setText("Fuerza");
+
+        jLabel18.setText("Agilidad Mental");
+
+        jb_agregarV.setText("Agregar");
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jb_agregarV)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel18))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_nombreV)
+                            .addComponent(tf_debilidadV)
+                            .addComponent(tf_agilidadFV)
+                            .addComponent(tf_poderV)
+                            .addComponent(tf_fuerzaV)
+                            .addComponent(tf_agilidadMV, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 366, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(3, 3, 3)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(tf_nombreV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(tf_debilidadV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(tf_agilidadFV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(tf_poderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(tf_fuerzaV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(tf_agilidadMV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addComponent(jb_agregarV))
         );
 
         jTabbedPane4.addTab("Agregar", jPanel12);
+
+        jList4.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = {  };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane4.setViewportView(jList4);
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 366, Short.MAX_VALUE)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Listar", jPanel13);
+
+        jList5.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = {  };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane5.setViewportView(jList5);
+
+        jLabel19.setText("Nombre del Villano");
+
+        jLabel20.setText("Agilidad Fisica");
+
+        jLabel21.setText("Fuerza");
+
+        jb_agregarV1.setText("Agregar");
+
+        jLabel22.setText("Debilidad");
+
+        jLabel23.setText("Poder");
+
+        jLabel24.setText("Agilidad Mental");
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jb_agregarV1)
+                .addGap(189, 189, 189))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane5)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel19))
+                        .addGap(2, 2, 2)
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel14Layout.createSequentialGroup()
+                                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(tf_agilidadFV1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tf_fuerzaV1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel24)
+                                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel22)))
+                            .addGroup(jPanel14Layout.createSequentialGroup()
+                                .addComponent(tf_nombreV1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tf_poderV1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_agilidadMV1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_debilidadV1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(8, 8, 8))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 366, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tf_debilidadV1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_nombreV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel23)
+                    .addComponent(tf_poderV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(tf_agilidadFV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel20)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tf_agilidadMV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24)
+                    .addComponent(tf_fuerzaV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jb_agregarV1)
+                .addGap(11, 11, 11))
         );
 
         jTabbedPane4.addTab("Modificar", jPanel14);
+
+        jList6.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = {  };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane6.setViewportView(jList6);
+
+        jb_eliminar1.setText("Eliminar");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6)
+                .addContainerGap())
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(198, 198, 198)
+                .addComponent(jb_eliminar1)
+                .addContainerGap(198, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 366, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jb_eliminar1)
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Eliminar", jPanel15);
@@ -494,7 +724,19 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -504,6 +746,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
+    private javax.swing.JList<String> jList3;
+    private javax.swing.JList<String> jList4;
+    private javax.swing.JList<String> jList5;
+    private javax.swing.JList<String> jList6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
@@ -517,23 +763,43 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JButton jb_agregarH;
     private javax.swing.JButton jb_agregarH1;
+    private javax.swing.JButton jb_agregarV;
+    private javax.swing.JButton jb_agregarV1;
+    private javax.swing.JButton jb_eliminar;
+    private javax.swing.JButton jb_eliminar1;
     private javax.swing.JTextField tf_agilidadFH;
     private javax.swing.JTextField tf_agilidadFH1;
+    private javax.swing.JTextField tf_agilidadFV;
+    private javax.swing.JTextField tf_agilidadFV1;
     private javax.swing.JTextField tf_agilidadMH;
     private javax.swing.JTextField tf_agilidadMH1;
+    private javax.swing.JTextField tf_agilidadMV;
+    private javax.swing.JTextField tf_agilidadMV1;
     private javax.swing.JTextField tf_debilidadH;
     private javax.swing.JTextField tf_debilidadH1;
+    private javax.swing.JTextField tf_debilidadV;
+    private javax.swing.JTextField tf_debilidadV1;
     private javax.swing.JTextField tf_fuerzaH;
     private javax.swing.JTextField tf_fuerzaH1;
+    private javax.swing.JTextField tf_fuerzaV;
+    private javax.swing.JTextField tf_fuerzaV1;
     private javax.swing.JTextField tf_nombreH;
     private javax.swing.JTextField tf_nombreH1;
+    private javax.swing.JTextField tf_nombreV;
+    private javax.swing.JTextField tf_nombreV1;
     private javax.swing.JTextField tf_poderH;
     private javax.swing.JTextField tf_poderH1;
+    private javax.swing.JTextField tf_poderV;
+    private javax.swing.JTextField tf_poderV1;
     // End of variables declaration//GEN-END:variables
 }
