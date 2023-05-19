@@ -8,10 +8,12 @@ String factores;
     public Mutante() {
     }
 
-    public Mutante(String factores, String nombre, String poder, String debilidad, int fuerza, int agilidadF, int agilidadM) {
-        super(nombre, poder, debilidad, fuerza, agilidadF, agilidadM);
+    public Mutante(String factores, String nombre, String poder, String debilidad, String tipo, int fuerza, int agilidadF, int agilidadM) {
+        super(nombre, poder, debilidad, tipo, fuerza, agilidadF, agilidadM);
         this.factores = factores;
     }
+
+    
 
     public String getFactores() {
         return factores;

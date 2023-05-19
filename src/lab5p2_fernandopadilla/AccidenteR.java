@@ -9,11 +9,13 @@ public class AccidenteR extends Persona {
     public AccidenteR() {
     }
 
-    public AccidenteR(int edad, String tipo, String nombre, String poder, String debilidad, int fuerza, int agilidadF, int agilidadM) {
-        super(nombre, poder, debilidad, fuerza, agilidadF, agilidadM);
+    public AccidenteR(int edad, String tipo, String nombre, String poder, String debilidad, String tipoA, int fuerza, int agilidadF, int agilidadM) {
+        super(nombre, poder, debilidad, tipo, fuerza, agilidadF, agilidadM);
         this.edad = edad;
-        this.tipo = tipo;
+        this.tipo = tipoA;
     }
+
+    
 
     public int getEdad() {
         return edad;

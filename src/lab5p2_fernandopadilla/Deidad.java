@@ -9,11 +9,13 @@ public class Deidad extends Extraterrestre {
     public Deidad() {
     }
 
-    public Deidad(boolean religion, String nombreR, String nombre, String poder, String debilidad, int fuerza, int agilidadF, int agilidadM) {
-        super(nombre, poder, debilidad, fuerza, agilidadF, agilidadM);
+    public Deidad(boolean religion, String nombreR, String nombre, String poder, String debilidad, String tipo, int fuerza, int agilidadF, int agilidadM) {
+        super(nombre, poder, debilidad, tipo, fuerza, agilidadF, agilidadM);
         this.religion = religion;
         this.nombreR = nombreR;
     }
+
+    
 
     public boolean isReligion() {
         return religion;

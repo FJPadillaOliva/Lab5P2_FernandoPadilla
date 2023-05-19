@@ -4,17 +4,20 @@
  */
 package lab5p2_fernandopadilla;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Wendy
  */
 public class Main extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Main
-     */
+    static ArrayList<Persona> heroes = new ArrayList();
+    static ArrayList<Persona> villanos = new ArrayList();
+    
     public Main() {
         initComponents();
+        Persona persona = new Persona();
     }
 
     /**
@@ -417,6 +420,11 @@ public class Main extends javax.swing.JFrame {
         jLabel6.setText("Agilidad Mental");
 
         jb_agregarH.setText("Agregar");
+        jb_agregarH.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_agregarHMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout AgregarLayout = new javax.swing.GroupLayout(Agregar);
         Agregar.setLayout(AgregarLayout);
@@ -920,6 +928,13 @@ public class Main extends javax.swing.JFrame {
     private void index3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_index3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_index3ActionPerformed
+
+    private void jb_agregarHMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_agregarHMouseClicked
+        // TODO add your handling code here:
+        heroes.add(new Persona(tf_nombreH.getText(), tf_poderH.getText(), tf_debilidadH.getText(), "Heroe",
+                Integer.parseInt(tf_fuerzaH.getText()),Integer.parseInt(tf_agilidadFH.getText()) , 
+                Integer.parseInt(tf_agilidadMH.getText())));
+    }//GEN-LAST:event_jb_agregarHMouseClicked
 
     /**
      * @param args the command line arguments

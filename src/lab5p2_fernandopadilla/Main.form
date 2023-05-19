@@ -648,6 +648,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Agregar"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jb_agregarHMouseClicked"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="tf_nombreH">
                     </Component>

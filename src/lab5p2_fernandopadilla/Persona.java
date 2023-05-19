@@ -3,20 +3,21 @@ package lab5p2_fernandopadilla;
 
 
 public class Persona {
-  private String nombre, poder, debilidad;
+  private String nombre, poder, debilidad, tipo;
   private int fuerza, agilidadF, agilidadM;
 
     public Persona() {
         super();
     }
 
-    public Persona(String nombre, String poder, String debilidad, int fuerza, int agilidadF, int agilidadM) {
+    public Persona(String nombre, String poder, String debilidad,String tipo, int fuerza, int agilidadF, int agilidadM) {
         this.nombre = nombre;
         this.poder = poder;
         this.debilidad = debilidad;
         this.fuerza = fuerza;
         this.agilidadF = agilidadF;
         this.agilidadM = agilidadM;
+        this.tipo = tipo;
     }
 
     public String getNombre() {
